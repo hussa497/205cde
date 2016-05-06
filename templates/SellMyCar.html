@@ -6,8 +6,8 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-<link href="parkway.css" rel="stylesheet">
-<style type="parkway.css" rel="stylesheet">
+<link href="/static/css/parkway.css" rel="stylesheet">
+<style rel="stylesheet">
 
 
 	.navbar{
@@ -51,7 +51,7 @@
          <legend>Selling Your Car</legend> 
          </div>
          
-         <form class="form-horizontal" action="savingdata.php" method="post" ><fieldset> 
+         <form id="sellmycarform" class="form-horizontal" action="savingdata.php" method="post" ><fieldset> 
          <center>Fields marked with an asterisk (*) must be provided.</center>
            <center>Your Details.</center>
            
@@ -88,29 +88,29 @@
           <div class="form-group"> 
           <label class="col-md-4 control-label" for="telephone">Contact Number*</label>     
           <div class="col-md-4"> 
-          <input id="email" name="telephone" type="text" placeholder="Day Phone " class="form-control input-md">
+          <input id="telephone" name="telephone" type="text" placeholder="Day Phone " class="form-control input-md">
           </div>
            </div>
                      <center>Your Car Details.</center>
             <!-- Manufacturer-->
           <div class="form-group"> 
-          <label class="col-md-4 control-label" for="telephone">Manufacturer*</label>     
+          <label class="col-md-4 control-label" for="make">Manufacturer*</label>     
           <div class="col-md-4"> 
-          <input id="email" name="Car Make" type="text" placeholder="Vehicle Make " class="form-control input-md">
+          <input id="make" name="make" type="text" placeholder="Vehicle Make " class="form-control input-md">
           </div>
            </div>
             <!-- Model-->
           <div class="form-group"> 
-          <label class="col-md-4 control-label" for="telephone">Model*</label>     
+          <label class="col-md-4 control-label" for="model">Model*</label>     
           <div class="col-md-4"> 
-          <input id="email" name="Car model" type="text" placeholder="Vehicle model " class="form-control input-md">
+          <input id="model" name="model" type="text" placeholder="Vehicle model " class="form-control input-md">
           </div>
            </div>
             <!-- REGISTRATION-->
           <div class="form-group"> 
-          <label class="col-md-4 control-label" for="telephone">Registration*</label>     
+          <label class="col-md-4 control-label" for="registration">Registration*</label>     
           <div class="col-md-4"> 
-          <input id="email" name="Car model" type="text" placeholder="Vehicle Registration " class="form-control input-md">
+          <input id="registration" name="registration" type="text" placeholder="Vehicle Registration " class="form-control input-md">
           </div>
            </div>
            <!-- REGISTRATION DATE--> 
@@ -122,8 +122,7 @@
           </div> 
           <!--Comments -->
           <div class="container text-center">
-          <textarea rows="4" cols="50" name="comment" form="usrform">
-Enter Any Comments Here...</textarea>
+          <textarea rows="4" cols="50" name="comment" id="comment" placeholder="Enter comment here..."></textarea>
           <!-- Button --> 
           <div class="form-group"> <label class="col-md-4 control-label" for="email"></label>
           <div class="col-md-4">
@@ -140,5 +139,6 @@ Enter Any Comments Here...</textarea>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>    
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="/static/js/sellmycar.js"></script>
     </body>
 </html>
