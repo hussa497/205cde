@@ -1,0 +1,41 @@
+/*//Company
+.target{
+  border-color:white;
+  border-style:solid;
+  padding:2px;
+}
+/*-----------------*/
+.maps{
+  position: absolute;
+    left: 925px;
+    top: 80px;
+    z-index: -1;
+}
+.times{
+   position: absolute;
+    left: 400px;
+    top: 100px;
+    z-index: -1;
+}
+.phone{
+  position: absolute;
+    left: 400px;
+    top: 400px;
+    z-index: -1;
+}
+body {
+    background-color:#ffffff;
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:50px;
+}
+#header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+}

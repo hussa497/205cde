@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Parkway Motors</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+<link href="css/parkway.css" rel="stylesheet">
+<style type="text/css">
+	.navbar{
+		margin-top: 20px;
+	}
+	
+</style>
+</head> 
+<body>
+<div class="container">
+    <nav role="navigation" class="navbar navbar-inverse">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">Parkway Motors</a>
+        </div>
+        <!-- Collection of nav link-->
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="Stock.html">Stock</a></li>
+                <li><a href="SellMyCar.html">Sell My Car</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="Finance.html">Finance</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
+                    </ul>
+                </li>
+            </ul>
+            
+        </div>
+    </nav>
+</div>
+
+
+
+<h1 style="font-size:250%;text-align:center;black;font-family:verdana;">Finance</h1>
+
+<div class="container text-center">
+    <a href="https://www.gobuyanycar.com/apply-dealer">
+<img  src="Images/Gobuy.jpg" alt="Mountain View"  style="width:500px;hight:700px;">
+</a>
+</div>
+<br>
+<div style="font-size:300%; border: 0px solid gray;text-align:center;margin-right:95px;margin-left:95px;">
+    To apply for finance click image above</div>
+    <br>
+
+<div style="font-size:110%; border: 2px solid gray;text-align:center;margin-right:400px;margin-left:400px;">
+    Purchasing your dream car with Go Buy Any Car is as simple as 123, we provide a no-obligation quote in minutes and decisions in 1 hour.
+    We have an extensive range of car finance providers at highly competitive rates.
+    Even if you have had credit problems in the past we are experts at providing finance deals for you. We have flexible deals to suit all budgets..</div>
+    <br>
+    
+    <body>
+   <!-- Form Name -->
+          <div class="container text-center">
+         <legend>Quick Finance Enquiry</legend> 
+         </div>
+         
+         <form class="form-horizontal" action="savingdata.php" method="post" ><fieldset> 
+         <center> Fields marked with an asterisk (*) must be provided.</center>
+           <center>Your Details.</center>
+           
+           
+
+          <!-- Pre-Fix --> 
+           <div class="form-group"> 
+           <label class="col-md-4 control-label" for="">Title*</label> 
+                <div class="col-md-4">
+                <select id="Title" name="title" class="form-control"> 
+                <option value="MR">Mr</option> 
+                <option value="MRS">Mrs</option>
+                <option value="MS">Miss</option>
+                 <option value="MS">Ms</option>
+                  <option value="MS">Other</option>
+                </select>
+               </div>
+            </div> 
+         <!-- Customer Name--> 
+         <div class="form-group"> 
+         <label class="col-md-4 control-label" for="name">Name*</label>    
+         <div class="col-md-4"> 
+         <input id='name' name="name" type="text" placeholder="First &amp; Last name" class="form-control input-md">
+         </div> 
+          </div> 
+          <!-- EMAIL-->
+          <div class="form-group"> 
+          <label class="col-md-4 control-label" for="email">Email*</label>     
+          <div class="col-md-4"> 
+          <input id="email" name="email" type="text" placeholder="Your email " class="form-control input-md">
+          </div>
+           </div>
+            <!-- Telephone-->
+          <div class="form-group"> 
+          <label class="col-md-4 control-label" for="telephone">Contact Number*</label>     
+          <div class="col-md-4"> 
+          <input id="email" name="telephone" type="text" placeholder="Day Phone " class="form-control input-md">
+          </div>
+           </div>
+                     
+          <!--Comments -->
+          <div class="container text-center">
+          <textarea rows="4" cols="50" name="comment" form="usrform">
+Additional information..</textarea>
+          <!-- Button --> 
+          <div class="form-group"> <label class="col-md-4 control-label" for="email"></label>
+          <div class="col-md-4">
+               <button id="submitbtn" name="submitbtn" class="btn btn-default">Submit</button> 
+          </div> 
+        </div> 
+        </fieldset> 
+        </form> 
+        <a href="showdb.php"></a> 
+        </body> 
+    
+    
+    
+    
+    
+    
+    
+    <div style="font-size:110%; border: 2px solid gray;text-align:center;margin-right:400px;margin-left:400px;">
+    Finance available subject to status. Indemnities may be required. 
+    Other finance offers may be available but cannot be used in conjunction with this offer. 
+    We work with a number of carefully selected credit providers who may be able to offer you finance for your purchase. 
+    We are only able to offer finance products from these providers. 
+    Postal address: Parkway Motor Group
+26 Mansfield Rd, Edwinstowe, Mansfield, Nottinghamshire NG21 9NJ.
+    Authorised and regulated by the Financial Conduct Authority.
+    Firm Reference Number: 725288</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>    
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    </body>
+</html>
